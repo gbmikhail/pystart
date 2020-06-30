@@ -1,2 +1,0 @@
-# pystart
-Основы языка Python
