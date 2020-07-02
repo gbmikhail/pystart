@@ -28,7 +28,7 @@ num = 0
 while True:
     num += 1
     new = input(f"Вы хотите ввести новый товар № {num}? (y/n): ").lower()
-    if new[:1] == "n" or new[:1] == "q" or new[:1] == "н":
+    if new[:1] in ("n", "q", "н"):
         break
 
     my_dict = {
