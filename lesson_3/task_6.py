@@ -19,7 +19,7 @@ def check_word(s: str):
 flag = True
 my_list = []
 while flag:
-    my_list = input("Ввыдите строку из слов в нижнем регистре: ").split()
+    my_list = input("Введите строку из слов в нижнем регистре: ").split()
     for idx, i in enumerate(my_list):
         my_list[idx] = check_word(i)
         if my_list[idx] is not None:
