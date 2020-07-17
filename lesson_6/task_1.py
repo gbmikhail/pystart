@@ -27,7 +27,7 @@ class TrafficLight:
             self.__print_color("yellow")
 
     def __print_color(self, key):
-        print(self.__color[key][1] + key, self.__CEND)
+        print("\r" + self.__color[key][1] + key, self.__CEND, end='')
         time.sleep(self.__color[key][0])
 
 
