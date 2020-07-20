@@ -22,7 +22,7 @@ class Coat(Clothes):
 
     @property
     def consumption(self):
-        return f'Расход ткани на пальто: {(self.size / 6.5 + 0.5):.2f}'
+        return self.size / 6.5 + 0.5
 
 
 class Suit(Clothes):
@@ -31,10 +31,11 @@ class Suit(Clothes):
 
     @property
     def consumption(self):
-        return f'Расход ткани на костюм: {(2 * self.growth + 0.3):.2f}'
+        return 2 * self.growth + 0.3
 
 
 a = Coat(120)
-print(a.consumption)
 b = Suit(65)
-print(b.consumption)
+
+print(f'Расход ткани на пальто: {a.consumption:.2f}')
+print(f'Расход ткани на костюм: {b.consumption:.2f}')
